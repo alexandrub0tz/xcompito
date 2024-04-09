@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: green">Home page</h2>
+
+    <h3>Inserimento nuovo attore</h3>
+    <form method="POST" action="inserisci.php">
+        Codice attore: <br>
+        <input type="number" name="codattore" placeholder="1"><br><br>
+
+        Nome: <br>
+        <input type="text" name="nome" placeholder="Mario"><br><br>
+
+        Anno di nascita: <br>
+        <input type="number" name="annonascita" placeholder="1960"><br><br>
+
+        Nazionalità: <br>
+        <input type="text" name="nazionalita" placeholder="italia"><br><br>
+
+        <input type="submit" value="Inserisci">
+    </form>
+
+    <br>
+    <hr>
+
+    <h3>Eliminare una proiezione</h3>
+    <form method="POST" action="elimina.php">
+        Codice proiezione: <br>
+        <input type="number" name="codproiezione" placeholder="1"><br><br>
+        <input type="submit" value="Elimina">
+    </form>
+
+    <br>
+    <hr>
+
+    <h3>Aggiornare una recensione</h3>
+    <form method="POST" action="aggiorna.php">
+        ID recensione: <br>
+        <input type="number" name="idrecensione" placeholder="1"><br><br>
+        
+        Voto: <br>
+        <input type="number" name="voto" placeholder="5"><br><br>
+
+        <input type="submit" value="Aggiorna">
+    </form>
+
+</body>
+</html>
